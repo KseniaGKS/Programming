@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простейшие программы</title>
+</head>
+<body>
+    <script>
+        //1.28
+        // let length, volume, square;
+        // length = parseFloat(prompt("Введите длину ребра куба"));
+        // volume = Math.pow(length, 3);
+        // square = Math.pow(length, 2) * 6;
+        // alert("Объём куба равен: " + volume + "\nПлощадь поверхности куба равна: " + square);
+        
+        //2.3
+        // let weight = parseFloat(prompt("Введите массу в килограммах"));
+        // alert("Масса в тоннах равна: " + Math.floor(weight / 1000));
+
+        //2.10
+        let number, d1, d2, sum;
+        number = parseInt(prompt("Введите двузначное число"));
+        d1 = number % 10;
+        d2 = Math.floor(number / 10) % 10;
+        sum = d1 + d2;
+        alert("Число десятков: " + d2 + "\nЧисло единиц: " + d1 + "\nСумма его цифр равна: " + sum + "\nПроизведение его цифр равно: " + d1 * d2);
+
+    </script>
+    
+</body>
+</html>
