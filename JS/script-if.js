@@ -86,8 +86,9 @@
     /*Задача № 5.40 
     let sum, n;
     n = parseInt(prompt("Введите число"))
-    for (let i = 1.1; i <= n; i++ ){
-        sum += ;
+    
+    for (let i = 1; i <= n; i++ ){
+        sum += i;
     }
     alert("Сумма равна: " + sum);*/
 }
