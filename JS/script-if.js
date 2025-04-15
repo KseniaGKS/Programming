@@ -84,36 +84,40 @@
 }
 {
     /*Задача № 5.40 
-    let sum, n;
-    n = parseInt(prompt("Введите число"))
-    
+    let sum, n, a;
+    n = parseInt(prompt("Введите количество вещественных чисел"))
+    sum = 0;
     for (let i = 1; i <= n; i++ ){
-        sum += i;
+        a = parseFloat(prompt("Введите число"));
+        sum += a;
     }
     alert("Сумма равна: " + sum);*/
 }
 {
     /*Задача № 6.49 
-    let d, x;
+    let d, x, threе = false, two = false , five = false;
     x = parseInt(prompt("Введите натуральное число"));
-    /*while ( x != 0 ){
-        d1 = x % 10;
-        if (d1 / 3 != 1){
-            x = Math.floor(x / 10);
-        }
-        else{
-            alert("В числе есть 3");
-            break;
-        }
-    }
-    while ( x != 0 ){
+    while ( x > 0 ){
         d = x % 10;
-        if (d / 2 != 1 || d / 5 != 0){
-            x = Math.floor(x / 10);
+        if (d === 3){
+            three = true;
         }
-        else{
-            alert("В числе есть 2 и 5");
-            break;
+        if (d === 2){
+            two = true;
         }
+        if (d === 5)
+        {
+            five = true;
+        }
+        x = Math.floor(x / 10);
+    }
+    if (three){
+        alert("В числе есть 3");
+    }
+    if(two && five){
+        alert("В числе есть 2 и 5");
+    }
+    if (!(three && !(two && five))){
+        alert("Условия не выполнены");
     }*/
 }
